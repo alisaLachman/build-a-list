@@ -35,6 +35,8 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  padding: 0px;
+  margin: 0px;
 }
 
 button {
@@ -67,4 +69,16 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.Paragraph {
+  margin: 0px;
+  color: #343452;
+}
+.Headline {
+  margin: 0px;
 }
