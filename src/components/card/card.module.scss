@@ -10,7 +10,10 @@
   margin: 0px;
   padding: 20px;
   width: 150px;
-  border-radius: 1px;
+  border-radius: 10px;
+  &:hover {
+    box-shadow: -0.1px 3px 15px -8px rgba(34, 36, 61, 0.55);
+  }
 }
 .card_headline {
   margin: 0px;
@@ -26,4 +29,12 @@
   padding: 0px;
   margin: 0px;
   width: 100%;
+}
+.purple {
+}
+.icon {
+  width: auto;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
