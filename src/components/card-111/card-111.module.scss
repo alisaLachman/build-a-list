@@ -1,7 +1,6 @@
-@import './card.module.color.scss';
-
 .root {
   height: 150px;
+  background-color: #fef7d8;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,21 +15,6 @@
     box-shadow: -0.1px 3px 15px -8px rgba(34, 36, 61, 0.55);
   }
 }
-.card_headline {
-  margin: 0px;
-}
-.card_paragraph {
-  margin: 0px;
-  font-weight: 300;
-  font-size: 15px;
-  width: 100%;
-  padding: 0px;
-}
-.text_container {
-  padding: 0px;
-  margin: 0px;
-  width: 100%;
-}
 
 .icon {
   width: auto;
@@ -39,8 +23,25 @@
   left: 20px;
 }
 
-&.yellow
-{
-   background-color: $yellow;
+.card_paragraph {
+  margin: 0px;
+  font-weight: 300;
+  font-size: 15px;
+  width: 100%;
+  padding: 0px;
 }
 
+.cards_headline {
+  margin: 0px;
+}
+
+.text_container {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+.text_container {
+}
+.card_paragraph {
+}

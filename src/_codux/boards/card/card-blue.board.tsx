@@ -1,11 +1,9 @@
 import { createBoard } from '@wixc3/react-board';
 import { Card } from '../../../components/card/card';
+import Card_module from '../../../components/card/card.module.scss';
+import Classnames from 'classnames';
 
 export default createBoard({
     name: 'Card blue',
-    Board: () => <Card />,
-    environmentProps: {
-        canvasWidth: 192,
-        canvasHeight: 192,
-    },
+    Board: () => <Card color="yellow" />,
 });
