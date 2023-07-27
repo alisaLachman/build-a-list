@@ -6,17 +6,19 @@ import styles from './card.module.scss';
 export interface CardProps {
     className?: string;
     color?: 'yellow' | 'blue' | 'pink' | 'purple';
-    c?: boolean;
+    selected: boolean;
 }
-
-export const Card = ({ className, color = 'yellow', c = true }: CardProps) => {
+/**how do I enter multiple classes */
+export const Card = ({ className, color = 'yellow', selected = true }: CardProps) => {
     return (
-        <div className={classNames(styles.root, { [styles[color]]: color }, className)}>
+        <div className={classNames(styles.root, { [styles.disabled]: !selected }, className)}>
             <Icon className={styles.icon} />
             <div className={styles.text_container}>
-                <h4 className={styles.card_headline}>Pay someone</h4>
-                <p className={styles.card_paragraph}>To wallet, bank or mobile number</p>
+                <h4 className={styles.card_headline}>Project Library</h4>
+                <p className={styles.card_paragraph}>manage your project Library easily</p>
             </div>
         </div>
     );
 };
+
+

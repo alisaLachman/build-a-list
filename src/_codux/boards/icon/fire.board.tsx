@@ -4,4 +4,5 @@ import { Icon } from '../../../components/icon/icon';
 export default createBoard({
     name: 'fire',
     Board: () => <Icon />,
+    isSnippet: true,
 });

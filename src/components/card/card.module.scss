@@ -37,6 +37,7 @@
   left: 20px;
 }
 
+/**color props**/
 .yellow {
   background-color: #fff8df;
   border: 2px solid #fce3b1;
@@ -55,4 +56,9 @@
 .purple {
   background-color: #eddfff;
   border: 2px solid #d4acf4;
+}
+
+.disabled {
+  background-color: #f6f6f6;
+  border: 2px solid #cfcbd0;
 }

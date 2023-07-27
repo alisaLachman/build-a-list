@@ -13,7 +13,7 @@ export const Icon = ({ className }: IconProps) => {
     return (
         <div className={classNames(styles.root, className)}>
             <img
-                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                src="https://cdn-icons-png.flaticon.com/512/707/707680.png"
                 alt=""
                 className={styles.flower}
             />

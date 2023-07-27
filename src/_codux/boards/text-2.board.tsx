@@ -8,4 +8,5 @@ export default createBoard({
             <p className="Paragraph">This is a paragraph.</p>
         </div>
     ),
+    isSnippet: true,
 });

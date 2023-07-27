@@ -3,9 +3,10 @@ import { ButtonType } from '../../../components/ButtonType/ButtonType';
 import ButtonType_module from '../../../components/ButtonType/ButtonType.module.scss';
 
 export default createBoard({
-    name: 'Not selected',
+    name: 'Selected',
     Board: () => <ButtonType selected={false} />,
     environmentProps: {
         windowWidth: 1024,
     },
+    isSnippet: true,
 });
