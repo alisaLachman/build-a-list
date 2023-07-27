@@ -4,6 +4,9 @@ import Card_module from '../../../components/card/card.module.scss';
 import Classnames from 'classnames';
 
 export default createBoard({
-    name: 'Card yellow',
-    Board: () => <Card color="yellow" />,
+    name: 'Card blue',
+    Board: () => <Card color="blue" />,
+    environmentProps: {
+        canvasHeight: 376,
+    },
 });

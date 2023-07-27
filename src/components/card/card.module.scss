@@ -1,5 +1,3 @@
-@import './card.module.color.scss';
-
 .root {
   height: 150px;
   display: flex;
@@ -39,8 +37,22 @@
   left: 20px;
 }
 
-&.yellow
-{
-   background-color: $yellow;
+.yellow {
+  background-color: #fff8df;
+  border: 2px solid #fce3b1;
 }
 
+.blue {
+  background-color: #dfebff;
+  border: 2px solid #bed6ff;
+}
+
+.pink {
+  background-color: #fedfff;
+  border: 2px solid #f2b3e9;
+}
+
+.purple {
+  background-color: #eddfff;
+  border: 2px solid #d4acf4;
+}

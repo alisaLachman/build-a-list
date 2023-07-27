@@ -1,19 +1,17 @@
 import classNames from 'classnames';
-import styles from './card.module.scss';
 import { Icon } from '../icon/icon';
+import styles from './card.module.scss';
+/**import styles for icon later */
 
 export interface CardProps {
     className?: string;
     color?: 'yellow' | 'blue' | 'pink' | 'purple';
+    c?: boolean;
 }
 
-/**
- * This component was created using Codux's Default new component template.
- * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
- */
-export const Card = ({ className }: CardProps) => {
+export const Card = ({ className, color = 'yellow', c = true }: CardProps) => {
     return (
-        <div className={classNames(styles.root, className)}>
+        <div className={classNames(styles.root, { [styles[color]]: color }, className)}>
             <Icon className={styles.icon} />
             <div className={styles.text_container}>
                 <h4 className={styles.card_headline}>Pay someone</h4>
