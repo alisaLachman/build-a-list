@@ -8,13 +8,12 @@ export interface CardProps {
     color?: 'yellow' | 'blue' | 'pink' | 'purple';
     selected: boolean;
 }
-/**how do I enter multiple classes */
 export const Card = ({ className, color = 'yellow', selected = true }: CardProps) => {
     return (
-        <div className={classNames(styles.root, { [styles.disabled]: !selected }, className)}>
+        <div className={classNames(styles.root, { [styles.disabled]: !selected },[styles[color]]: color, className)}>
             <Icon className={styles.icon} />
             <div className={styles.text_container}>
-                <h4 className={styles.card_headline}>Project Library</h4>
+                <h4 className={styles.card_headline}>Project Library</h4> 
                 <p className={styles.card_paragraph}>manage your project Library easily</p>
             </div>
         </div>

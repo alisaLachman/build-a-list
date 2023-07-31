@@ -4,7 +4,7 @@ import ButtonType_module from '../../../components/ButtonType/ButtonType.module.
 
 export default createBoard({
     name: 'Not selected',
-    Board: () => <ButtonType selected={false} />,
+    Board: () => <ButtonType selected={true} />,
     environmentProps: {
         windowWidth: 1024,
     },
