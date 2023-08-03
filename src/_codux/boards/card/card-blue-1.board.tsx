@@ -5,7 +5,14 @@ import Classnames from 'classnames';
 
 export default createBoard({
     name: 'Card blue',
-    Board: () => <Card color="blue" selected={true} />,
+    Board: () => (
+        <Card
+            color="blue"
+            selected={true}
+            title={'kkkk'}
+            pharahraphText={'ffffffffffffffffffffffffffffffffffffffff'}
+        />
+    ),
     environmentProps: {
         canvasHeight: 376,
     },
