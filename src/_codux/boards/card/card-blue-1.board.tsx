@@ -9,7 +9,7 @@ export default createBoard({
         <Card
             color="blue"
             selected={true}
-            title={'kkkk'}
+            title={'kkkkkkkkkkkkkkkkkkkkkkkk'}
             pharahraphText={'ffffffffffffffffffffffffffffffffffffffff'}
         />
     ),
