@@ -36,9 +36,9 @@
 
 .icon {
   width: auto;
-  position: relative;
-  top: -30px;
-  left: -65px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
 }
 
 /**color props**/
@@ -50,6 +50,8 @@
 .blue {
   background-color: #dfebff;
   border: 2px solid #bed6ff;
+  display: flex;
+  width: auto;
 }
 
 .pink {

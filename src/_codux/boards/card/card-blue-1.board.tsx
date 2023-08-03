@@ -9,12 +9,13 @@ export default createBoard({
         <Card
             color="blue"
             selected={true}
-            title={'kkkkkkkkkkkkkkkkkkkkkkkk'}
-            pharahraphText={'ffffffffffffffffffffffffffffffffffffffff'}
+            title={'kkkkkkk'}
+            pharahraphText={'ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'}
         />
     ),
     environmentProps: {
         canvasHeight: 376,
+        canvasWidth: 200,
     },
     isSnippet: true,
 });
