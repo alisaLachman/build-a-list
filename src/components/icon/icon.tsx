@@ -14,7 +14,7 @@ export const Icon = ({ className }: IconProps) => {
         <div className={classNames(styles.root, className)}>
             <img
                 src="https://cdn-icons-png.flaticon.com/512/707/707680.png"
-                alt=""
+                alt="heart"
                 className={styles.flower}
             />
         </div>

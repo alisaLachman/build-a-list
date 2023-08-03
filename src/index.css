@@ -82,3 +82,28 @@ button:focus-visible {
 .Headline {
   margin: 0px;
 }
+.flex {
+  padding: 20px;
+}
+.class {
+  display: flex;
+}
+.chips {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 10px;
+}
+.card {
+  padding: 30px;
+  box-shadow: 1.85px 2.36px 21px -8px rgba(63, 59, 59, 0.68);
+  border-radius: 10px;
+}
+.gender {
+  padding: 5px;
+  margin: 0px;
+  border: 1px solid #a5a5a5;
+  background-color: #fff7f7;
+  color: #180202;
+  width: 100%;
+}

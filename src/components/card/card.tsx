@@ -4,12 +4,14 @@ import styles from './card.module.scss';
 /**import styles for icon later */
 
 export interface CardProps {
-    className?: string;
-    color?: 'yellow' | 'blue' | 'pink' | 'purple';
+    classname?: string;
+    title: string;
+    color: 'yellow' | 'blue' | 'pink' | 'purple';
     selected: boolean;
 }
-export const Card = ({ className, color = 'yellow', selected = true }: CardProps) => {
+export const Card = ({ className, color = 'yellow', selected = true, title }: CardProps) => {
     return (
+       
         <div className={classNames(styles.root, { [styles.disabled]: !selected },[styles[color]]: color, className)}>
             <Icon className={styles.icon} />
             <div className={styles.text_container}>
@@ -17,6 +19,7 @@ export const Card = ({ className, color = 'yellow', selected = true }: CardProps
                 <p className={styles.card_paragraph}>manage your project Library easily</p>
             </div>
         </div>
+        
     );
 };
 

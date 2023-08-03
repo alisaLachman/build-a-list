@@ -6,7 +6,6 @@
   justify-items: center;
   align-content: center;
   justify-content: center;
-  margin: 0px;
   padding: 20px;
   width: 150px;
   border-radius: 10px;
@@ -32,9 +31,9 @@
 
 .icon {
   width: auto;
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  position: relative;
+  top: -30px;
+  left: -65px;
 }
 
 /**color props**/
@@ -62,3 +61,5 @@
   background-color: #f6f6f6;
   border: 2px solid #cfcbd0;
 }
+
+
