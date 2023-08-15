@@ -1,27 +1,38 @@
 import classNames from 'classnames';
 import { Icon } from '../icon/icon';
 import styles from './card.module.scss';
-/**import styles for icon later */
 
 export interface CardProps {
-    classname?: string;
+    className?: string;
     title: string;
-    pharahraphText?:string;
+    pharahraphText?: string;
     color: 'yellow' | 'blue' | 'pink' | 'purple';
     selected: boolean;
 }
-export const Card = ({ className, color = 'yellow', selected = true, title,pharahraphText}: CardProps) => {
+
+export const Card = ({
+    className,
+    color = 'yellow',
+    selected = true,
+    title,
+    pharahraphText,
+}: CardProps) => {
+    const myColor = typeof color === 'string' ? color : '';
     return (
-       
-        <div className={classNames(styles.root, { [styles.disabled]: !selected },[styles[color]]: color, className)}>
-            <Icon className={styles.icon} />
-            <div className={styles.text_container}>
-                <h4 className={styles.card_headline}>{title}</h4> 
-                <p className={styles.card_paragraph}>{pharahraphText}</p>
-            </div>
+        <div
+            className={classNames(
+                styles.root,
+                { [styles.disabled]: !selected, [styles[myColor]]: color },
+                className
+            )}
+        >
+            <Icon className={styles.icon} iconType="heart" />
+            <span className={styles.card_headline}>
+                <h2>{title}</h2>
+            </span>
+            <span className={styles.card_paragraph}>
+                <p>{pharahraphText}</p>
+            </span>
         </div>
-        
     );
 };
-
-

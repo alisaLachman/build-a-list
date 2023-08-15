@@ -5,7 +5,7 @@ import Classnames from 'classnames';
 
 export default createBoard({
     name: 'Card yellow',
-    Board: () => <Card color="yellow" selected={true} />,
+    Board: () => <Card color="pink" selected={true} />,
     environmentProps: {
         canvasHeight: 376,
     },

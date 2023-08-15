@@ -3,20 +3,16 @@ import styles from './icon.module.scss';
 
 export interface IconProps {
     className?: string;
+    iconType: 'heart' | 'duck' | 'flower'| 'cloud';
 }
 
-/**
- * This component was created using Codux's Default new component template.
- * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
- */
-export const Icon = ({ className }: IconProps) => {
-    return (
-        <div className={classNames(styles.root, className)}>
-            <img
-                src="https://cdn-icons-png.flaticon.com/512/707/707680.png"
-                alt="heart"
-                className={styles.flower}
-            />
-        </div>
-    );
+export const Icon = ({ className, iconType }: IconProps) => {
+    const iconTypeUrl = {
+        heart: 'https://cdn-icons-png.flaticon.com/512/707/707680.png',
+        duck: 'https://cdn-icons-png.flaticon.com/512/1012/1012754.png',
+        flower: 'https://cdn-icons-png.flaticon.com/512/9111/9111681.png',
+        cloud: 'https://cdn-icons-png.flaticon.com/512/1585/1585341.png',
+    };
+
+    return <img className={classNames(styles.root, className, iconType)} src={iconTypeUrl[iconType]} />;
 };

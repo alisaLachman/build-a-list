@@ -7,9 +7,5 @@ export interface ButtonTypeProps {
 }
 
 export const ButtonType = ({ className, selected = true }: ButtonTypeProps) => {
-    return (
-        <button className={classNames(styles.root, { [styles.disabled]: !selected }, className)}>
-            chips
-        </button>
-    );
+    return <button className={classNames(styles.root, className, styles.disabled)}>chips</button>;
 };
