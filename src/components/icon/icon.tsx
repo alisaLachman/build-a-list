@@ -1,10 +1,14 @@
 import classNames from 'classnames';
 import styles from './icon.module.scss';
 
+export type IconType = 'heart' | 'duck' | 'flower'| 'cloud';
+
 export interface IconProps {
     className?: string;
-    iconType: 'heart' | 'duck' | 'flower'| 'cloud';
+    iconType: IconType;
 }
+
+
 
 export const Icon = ({ className, iconType }: IconProps) => {
     const iconTypeUrl = {

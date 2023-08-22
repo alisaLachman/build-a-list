@@ -26,7 +26,7 @@ export const Card = ({
                 className
             )}
         >
-            <Icon className={styles.icon} iconType="heart" />
+            <Icon className={styles.icon} iconType="cloud" />
             <span className={styles.card_headline}>
                 <h2>{title}</h2>
             </span>
