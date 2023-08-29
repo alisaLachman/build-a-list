@@ -3,6 +3,6 @@ import { Icon } from '../../../components/icon/icon';
 
 export default createBoard({
     name: 'CardIcon',
-    Board: () => <Icon iconType="cloud" />,
+    Board: () => <Icon iconType="flower" />,
     isSnippet: true,
 });
