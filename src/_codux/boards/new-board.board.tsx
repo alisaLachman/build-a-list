@@ -2,6 +2,10 @@ import { createBoard } from '@wixc3/react-board';
 
 export default createBoard({
     name: 'New Board',
-    Board: () => <div></div>,
+    Board: () => (
+        <div>
+            <button>Button</button>
+        </div>
+    ),
     isSnippet: true,
 });

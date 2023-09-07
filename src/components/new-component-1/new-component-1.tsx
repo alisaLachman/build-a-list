@@ -10,5 +10,10 @@ export interface NewComponent1Props {
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
 export const NewComponent1 = ({ className }: NewComponent1Props) => {
-    return <div className={classNames(styles.root, className)}>NewComponent1</div>;
+    return (
+        <img
+            src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+            alt=""
+        />
+    );
 };

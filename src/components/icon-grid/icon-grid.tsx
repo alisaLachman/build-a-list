@@ -14,11 +14,11 @@ export const IconGrid = ({ className }: IconGridProps) => {
         <div className={classNames(styles.root, className, 'IconGrid')}>
             {icons.map((icon) => {
                 const whatever = 'hello';
-               
-                return <Icon iconType="flower" />;
-            })}
 
-           
+                return <Icon iconType="heart" />;
+            })}
         </div>
     );
 };
+
+

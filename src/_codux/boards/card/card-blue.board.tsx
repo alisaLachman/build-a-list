@@ -6,16 +6,16 @@ export default createBoard({
     name: 'Card blue',
     Board: () => (
         <Card
-            color="purple"
-            selected={false}
             title={'mc,nc,mnc'}
             pharahraphText={'This is one out of 4 cards this is a blue card'}
+            selected={false}
         />
     ),
 
     isSnippet: true,
 
     environmentProps: {
-        windowWidth: 1024,
+        windowWidth: 1188,
+        canvasHeight: 1104,
     },
 });
